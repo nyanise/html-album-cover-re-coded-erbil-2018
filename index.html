@@ -1,45 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>HTML Album Cover</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+
+    <title>JavaScript Strings Code-along</title>
+    <meta name="description" content="Introduction to JavaScript strings in the Learn.co curriculum">
+    <meta name="author" content="Flatiron School">
+
+    <link rel="stylesheet" href="node_modules/mocha/mocha.css">
   </head>
+
   <body>
-    <div class="wrapper">
-      <div id="front" class="album">
-        <div id="title-box">
+    <!-- <div> for Mocha to display test results. -->
+    <div id="mocha"></div>
 
-          <h4>PHARRELL WILLIAMS</h4>
-    
-          <h2>HAPPY</h2>
+    <!-- Include Mocha and set it up for BDD-style testing. -->
+    <script src="node_modules/mocha/mocha.js"></script>
+    <script>mocha.setup('bdd');</script>
 
-          <h4>| FROM DESPICABLE ME 2 |</h4>
+    <!-- Include Chai as the matcher library. -->
+    <script src="node_modules/chai/chai.js"></script>
 
-        </div>
-      </div>
+    <!-- Include the student's JavaScript file. -->
+    <script src="index.js"></script>
 
-      <div id="back" class="album">
+    <!-- Include the JavaScript file containing the tests. -->
+    <script src="test/indexTest.js"></script>
 
-        <h3>| FROM DESPICABLE ME 2 |</h3>
-        
-        <h1>HAPPY</h1>
+    <!-- Include Flatiron School's test runner to push results to Learn. -->
+    <script src="node_modules/learn-browser/learnBrowser.min.js"></script>
 
-        <h3>WRITTEN BY PHARRELL WILLIAMS</h3>
-
-        <p>PUBLISHED BY EMI APRIL MUSIC, INC. OBO ITSELF AND MORE WATERFROM NAZARETH (ASCAP) / UNIVERSAL PICTURES MUSIC (ASCAP) | BACKGROUND VOCALS PERFORMED BY RHEA DUMMETT, TREVON HENDERSON, ASHLEY L. LEE, SHAMIKA HIGHTOWER, JASMINE MURRAY AND TERRENCE ROLLE | PRODUCED BY PHARRELL WILLIAMS | RECORDED BY MIKE LARSON FOR I AM OTHER ENTERTAINMENT AT CIRCLE HOUSE STUDIOS, MIAMI, FL | ASSISTED BY MATTHEW DESRAMEAUX | DIGITAL EDITING AND ARRANGEMENT BY ANDREW COLEMAN AND MIKE LARSON FOR I AM OTHER ENTERTAINMENT | MIXED BY LESLIE BRATHWAITE AT MUSIC BOX STUDIOS, ATLANTA, GA.</p>
-
-        <span>PHARRELLWILLIAMS.COM</span>
-
-        <img src="https://s3.amazonaws.com/learn-verified/columbia-logo.png" alt="Columbia">
-
-        <span>COLUMBIARECORDS.COM</span>
-
-        <br>
-        
-        <img src="https://s3.amazonaws.com/learn-verified/sony-logo.png" alt="Sony">
-
-      </div>
-    </div>
+    <!-- Run the test suite automatically when the page loads. -->
+    <script>LearnBrowser.test();</script>
   </body>
-</html>
